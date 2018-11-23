@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp" >
+
+    <Button
+        android:id="@+id/btDiscover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:text="1-DISCOVER"
+     />
+
+    <Button
+        android:id="@+id/btConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/btDiscover"
+
+        android:text="2-CONNECT"
+/>
+
+    <Button
+        android:id="@+id/btDisc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/btConnect"
+
+
+        android:text="3-DISCONN"
+/>
+
+    <Button
+        android:id="@+id/bt50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/btDiscover"
+        android:layout_alignParentStart="true"
+
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="THRSH -50" />
+
+    <Button
+        android:id="@+id/bt90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/btDiscover"
+        android:layout_toEndOf="@id/bt50"
+
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="THRSH -90" />
+
+    <ScrollView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_below="@id/bt50"
+        android:layout_alignParentStart="true"
+        >
+
+    <TextView
+        android:id="@+id/TagText"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+
+
+
+
+        android:fadeScrollbars="false"
+        android:scrollbars="vertical"
+
+        android:text="DevKitchen Milan 2018"
+/>
+    </ScrollView>
+
+    <ToggleButton
+        android:id="@+id/toggleIL"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btDiscover"
+        android:layout_marginStart="-14dp"
+        android:layout_toEndOf="@+id/btConnect"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:checked="false"
+        android:text="ToggleButton"
+        android:textOff="1.5-Locating"
+        android:textOn="Inventoring" />
+
+</RelativeLayout>
